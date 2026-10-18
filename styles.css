@@ -366,3 +366,13 @@ table.optgrid td.verdict.bad{ color:#FFB4AC; }
 .fig-row{ grid-template-columns:1fr; gap:32px; margin-top:20px; }
 .fig-row .table-wrap{ margin-top:0; }
 @media (max-width:900px){ .fig-row{ grid-template-columns:1fr; } }
+
+/* mitigations */
+.mitigations{ display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:48px; }
+.mit{ background:var(--paper); border:1px solid var(--rule); border-top:4px solid var(--ink); border-radius:12px; padding:24px; }
+.mit:first-child{ border-top-color:var(--glow); }
+.mit h3{ margin-bottom:14px; }
+.mit ul{ margin:0; padding-left:1.1em; }
+.mit li{ font-size:0.98rem; line-height:1.5; margin-bottom:10px; }
+.mit-note{ margin:14px 0 0; padding-top:12px; border-top:1px solid var(--rule); font-size:0.9rem; color:var(--ink-2); }
+@media (max-width:900px){ .mitigations{ grid-template-columns:1fr; } }

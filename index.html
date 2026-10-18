@@ -416,7 +416,35 @@
         <li>VIDAA OS sent viewing data, a permanent device ID and sensitive categories without encryption, and its server exposed more than 57 million detection results.</li>
         <li>Even users who fully opt out aren't safe: Vizio's WatchFree+ reveals program titles to anyone watching the network.</li>
       </ul>
-      <p class="closing">[Your closing call to action: what should change, and who should change it.]</p>
+            <p class="closing">An opt-out should do what it says, and what you watch should never travel unencrypted.</p>
+    </div>
+
+    <div class="mitigations">
+      <div class="mit">
+        <h3>If you own a smart TV</h3>
+        <ul>
+          <li>Disconnect the TV from the internet and watch through an external streaming device that doesn't run ACR.</li>
+          <li>Or turn ACR off on systems where opting out worked in our tests: webOS (LG), Fire TV OS, Google TV on Sony, and VIDAA OS.</li>
+          <li>On other systems, use <a href="https://github.com/IlgarNEU/Watching-the-Watchers/tree/main/Blocklist">our blocklist</a>. In our lab, blocking these endpoints didn't break the TV or affect viewing quality in the scenarios we tested.</li>
+        </ul>
+        <p class="mit-note">Neither step stops the program-title leak in Vizio's WatchFree+.</p>
+      </div>
+      <div class="mit">
+        <h3>For TV makers</h3>
+        <ul>
+          <li>List every input that ACR watches, such as antenna, HDMI, apps and screen mirroring, in the privacy policy.</li>
+          <li>Authenticate and encrypt all ACR traffic.</li>
+          <li>Close the Amagi leak: use encrypted DNS, and stop putting what people watch into web addresses.</li>
+        </ul>
+      </div>
+      <div class="mit">
+        <h3>For regulators</h3>
+        <ul>
+          <li>Audit ACR disclosures, and test whether opt-outs actually work.</li>
+          <li>Our automated method can collect that evidence at scale.</li>
+          <li>Request what researchers can't see, such as the data stored on ACR servers.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
