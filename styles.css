@@ -242,7 +242,7 @@ table.optgrid td.rate:hover{ transform:none; }
 
 .broker > div{ min-width:0; }
 .broker{ margin-top:24px; background:var(--screen); color:#E8ECFF; border-radius:14px; padding:44px; display:grid; grid-template-columns:1.3fr 1fr; gap:44px; align-items:end; }
-.broker .huge{ font-family:var(--display); font-weight:900; font-stretch:105%; font-size:clamp(2.6rem,7vw,5.8rem); line-height:0.9; letter-spacing:-0.03em; color:#fff; font-variant-numeric:tabular-nums; }
+.broker .huge{ font-family:var(--display); font-weight:900; font-stretch:105%; font-size:clamp(2.4rem,7vw,5.8rem); line-height:0.9; letter-spacing:-0.03em; color:#fff; font-variant-numeric:tabular-nums; }
 .broker .huge-lbl{ font-size:1.15rem; color:var(--glow-soft); margin-top:14px; max-width:30ch; }
 .broker dl{ margin:0; display:grid; gap:18px; }
 .broker dt{ font-family:var(--display); font-weight:800; font-stretch:120%; font-size:2rem; color:#fff; line-height:1; }
